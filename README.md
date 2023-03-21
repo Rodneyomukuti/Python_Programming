@@ -38,9 +38,13 @@ variable_name = value
 `
 `
 # Examples
+
 x = 3 #integers
+
 y = 2.5 # floats
+
 name = "John" # strings
+
 is_student = True # booleans
 `
 
