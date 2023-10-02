@@ -124,11 +124,13 @@ for fruit in fruits:
 Functions are used to group code that performs a specific task. They allow you to break up your code into reusable blocks, making it easier to read and maintain. In Python, you can define a function using the `def` keyword, followed by the function name and any parameters that it takes. 
 
 Here's an example:
+
 `
 def greet(name):
     print("Hello, " + name + "!")
 
 greet("Rodney")
+
 `
 
 The above function takes one parameter, `name`, and prints out a greeting using that name. When we call the function with `greet("Rodney")`, it will print out `"Hello, Rodney!"`.
