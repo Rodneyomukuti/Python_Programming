@@ -148,8 +148,7 @@ This function takes one parameter, `x`, and returns the square of that number. W
 Functions can also have default parameter values, which are used if the caller doesn't provide a value for that parameter. 
 
 Here's an example:
-`
-def greet(name="world"):
+`def greet(name="world"):
     print("Hello, " + name + "!")
 
 greet()        # prints "Hello, world!"
