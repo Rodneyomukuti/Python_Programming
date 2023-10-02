@@ -131,7 +131,7 @@ def greet(name):
 greet("Rodney")
 `
 
-The above function takes one parameter, `name`, and prints out a greeting using that name. When we call the function with `greet("Rodney")`, it will print out `"Hello, John!"`.
+The above function takes one parameter, `name`, and prints out a greeting using that name. When we call the function with `greet("Rodney")`, it will print out `"Hello, Rodney!"`.
 
 Functions can also return values using the `return` keyword. 
 
