@@ -33,12 +33,12 @@ In Python, a variable is a container that holds a value. Values can be of differ
 
 To create a variable, you can use the following syntax:
 
-`
+```
 variable_name = value
-`
+```
 `
 # Examples
-
+```
 x = 3 #integers
 
 y = 2.5 # floats
@@ -46,7 +46,7 @@ y = 2.5 # floats
 name = "John" # strings
 
 is_student = True # booleans
-`
+```
 
 #### 2. Operators
 
@@ -62,30 +62,33 @@ Operators are used to perform operations on variables and values. There are seve
 
 `
 # For example
+```
 # Arithmetic operators
 x = 3 + 4   # x is now 7
 y = 3 * 4   # y is now 12
-`
-`
+```
+
+```
 # Comparison operators
 a = 3
 b = 4
 print(a == b)   # False
 print(a < b)    # True
-`
-`
+```
+
+```
 # Logical operators
 x = 5
 y = 10
 print(x < y and x > 0)   # True
 print(x > y or x < 0)    # False
-`
-`
+```
+```
 # Assignment operators
 x = 5
 x += 3    # x is now 8
 x -= 2    # x is now 6
-`
+```
 
 #### 3. Control Structures
 
@@ -97,8 +100,8 @@ Control structures are used to control the flow of a program. There are several 
 
 **For loops:** Used to iterate over a sequence of values.
 
-`
-# Examples
+#### Examples
+```
 # If statement
 x = 5
 if x > 0:
@@ -107,74 +110,77 @@ elif x == 0:
     print("x is zero")
 else:
     print("x is negative")
-
+```
+```
 # While loop
 i = 0
 while i < 5:
     print(i)
     i += 1
-
+```
+```
 # For loop
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
-`
+```
 #### 4. Functions
 
 Functions are used to group code that performs a specific task. They allow you to break up your code into reusable blocks, making it easier to read and maintain. In Python, you can define a function using the `def` keyword, followed by the function name and any parameters that it takes. 
 
 Here's an example:
 
-`
+```
 def greet(name):
     print("Hello, " + name + "!")
 
 greet("Rodney")
 
-`
+```
 
 The above function takes one parameter, `name`, and prints out a greeting using that name. When we call the function with `greet("Rodney")`, it will print out `"Hello, Rodney!"`.
 
 Functions can also return values using the `return` keyword. 
 
 Here's an example:
-`
+```
 def square(x):
     return x * x
 
 result = square(10)
 print(result)
-`
+```
 This function takes one parameter, `x`, and returns the square of that number. We call the function with `square(10)`, which returns `100`, and then we assign that result to the variable result and print it out.
 
 Functions can also have default parameter values, which are used if the caller doesn't provide a value for that parameter. 
 
 Here's an example:
-`def greet(name="world"):
+```
+def greet(name="world"):
     print("Hello, " + name + "!")
 
 greet()        # prints "Hello, world!"
 greet("Rodney")  # prints "Hello, Rodney!"
-`
+```
 
 This function takes one optional parameter, `name`, which defaults to `"world"`. If we call the function with no arguments, it will use the default value and print out `"Hello, world!"`. If we call it with an argument, it will use that argument instead and print out `"Hello, Rodney!"`.
 
 Finally, functions can also take variable-length arguments using the `*args` syntax. This allows you to pass in any number of arguments, which will be collected into a tuple. 
 
 Here's an example:
-`
+```
 def add(*args):
     result = 0
     for num in args:
         result += num
     return result
-`
-`
+```
+```
 print(add(1, 2, 3))   # prints 6
 print(add(1, 2, 3, 4))   # prints 10
 print(add(0)) # prints 0
 print(add()) # prints 0
-`
+```
 
 This function takes any number of arguments, which are collected into the `args` tuple. It then adds up all of the numbers and returns the result. When we call the function with `add(1, 2, 3)`, it will return `6`, and when we call it with `add(1, 2, 3, 4)`, it will return `10`.
 
@@ -192,21 +198,21 @@ Control flow statements allow you to control the flow of your program based on c
 
 if/else statements allow you to execute certain code blocks if a certain condition is met, and a different code block if the condition is not met. The basic syntax for an if/else statement is as follows:
 
-`
+```
 if condition:
     # code block to execute if the condition is true
 else:
     # code block to execute if the condition is false
-`
+```
 Below is an example:
 
-`
+```
 x = 5
 if x > 10:
     print("x is greater than 10")
 else:
     print("x is less than or equal to 10")
-`
+```
 
 This code block will output `"x is less than or equal to 10"` because the condition `x > 10` is false.
 
@@ -214,17 +220,17 @@ You can also use elif statements to check for additional conditions.
 
 The syntax for elif is similar to if:
 
-`
+```
 if condition1:
     # code block to execute if condition1 is true
 elif condition2:
     # code block to execute if condition2 is true
 else:
     # code block to execute if neither condition1 nor condition2 are true
-`
+```
 Below is an example:
 
-`
+```
 x = 5
 if x > 10:
     print("x is greater than 10")
@@ -232,7 +238,7 @@ elif x == 10:
     print("x is equal to 10")
 else:
     print("x is less than 10")
-`
+```
 
 This code block will output `"x is less than 10"` because the condition `x > 10` is false, and the condition `x == 10` is also false.
 
@@ -242,39 +248,39 @@ for loops allow you to iterate over a sequence of values, such as a list or a st
 
 The basic syntax for a for loop is as follows:
 
-`
+```
 for variable in sequence:
     # code block to execute for each value in the sequence
-`
+```
 Below is an example:
 
-`
+```
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
-`
-`
+```
+```
 names = ["leo", "dante", "chinda", "salma", "zena", "neema"]
 for n in names:
     print(n)
-`
+```
 
 #### 3. while loops
 
 while loops allow you to execute a code block repeatedly as long as a certain condition is true. The basic syntax for a while loop is as follows:
 
-`
+```
 while condition:
     # code block to execute as long as the condition is true
-`
+```
 
 Below is an example:
-`
+```
 x = 0
 while x < 5:
     print(x)
     x += 1
-`
+```
 The code block in the while loop prints the current value of `x`, and then increments x by 1 using the `x += 1` shorthand for `x = x + 1`. This means that the first time the code block is executed, `x is equal to 0` and is printed to the console. 
 
 Then, x is incremented to 1. The condition is still true `(1 < 5)`, so the code block is executed again, and x is printed to the console again. This process continues until `x is equal to 5`, at which point the condition is no longer true `(5 < 5 is false)`, and the while loop terminates.
@@ -296,73 +302,73 @@ A list is a collection of values that are ordered and mutable, meaning that you 
 
 For example:
 
-`
+```
 fruits = ["apple", "banana", "cherry"]
-`
+```
 
 You can access elements in a list by their index, which starts at 0. 
 
 For example:
-`
+```
 fruits = ["apple", "banana", "cherry"]
 print(fruits[0])   # outputs "apple"
 print(fruits[1])   # outputs "banana"
 print(fruits[2])   # outputs "cherry"
-`
+```
 You can also modify elements in a list by their index, like this:
 
-`
+```
 fruits = ["apple", "banana", "cherry"]
 fruits[1] = "orange"
 print(fruits)   # outputs ["apple", "orange", "cherry"]
-`
+```
 #### 2. Tupples
 
 Tuples are similar to lists, but they are immutable, meaning they cannot be modified once they are created. Tuples are defined using parentheses instead of square brackets. 
 
 Here's an example:
 
-`
+```
 my_tuple = (1, 2, 3, "four", 5.6)
-`
+```
 You can access elements of a tuple using the same syntax as for lists:
 
-`
+```
 my_tuple = (1, 2, 3, "four", 5.6)
 print(my_tuple[0]) # prints 1
 print(my_tuple[3]) # prints "four"
-`
+```
 However, you cannot modify the elements of a tuple:
 
-`
+```
 my_tuple = (1, 2, 3, "four", 5.6)
 my_tuple[1] = "two" # raises a TypeError: 'tuple' object does not support item assignment
-`
+```
 #### 3. Dictionaries:
 
 Dictionaries are used to store key-value pairs. Each key in a dictionary maps to a corresponding value. Dictionaries are defined using curly braces, with each key-value pair separated by a colon. 
 
 Here's an example:
 
-`
+```
 my_dict = {"name": "Rodney", "age": 24, "city": "Kilifi Kenya"}
-`
+```
 You can access values in a dictionary using their keys:
 
-`
+```
 my_dict = {"name": "Rodney", "age": 24, "city": "Kilifi Kenya"}
 print(my_dict["name"]) # prints "Rodney"
 print(my_dict["city"]) # prints "Kilifi Kenya"
 print(my_dict["age"]) # prints 24
-`
+```
 
 You can also modify values in a dictionary by assigning new values to their keys:
 
-`
+```
 my_dict = {"name": "Rodney", "age": 24, "city": "New York"}
 my_dict["age"] = 35
 print(my_dict) # prints {"name": "John", "age": 35, "city": "New York"}
-`
+```
 
 #### 4. Sets
 
@@ -370,10 +376,10 @@ Sets are used to store a collection of unique elements. Sets are defined using c
 
 Here's an example:
 
-`
+```
 my_set = {1, 2, 3, 3, 4, 5, 5} # creates a set with unique elements
 print(my_set) # prints {1, 2, 3, 4, 5}
-`
+```
 
 You can perform various set operations, such as union, intersection, and difference, using set methods or operators.
 
@@ -385,7 +391,7 @@ You can perform various set operations, such as union, intersection, and differe
 
 4. Symmetric difference: The symmetric difference of two sets is a new set that contains only the elements that are in one of the sets but not in both. You can perform a symmetric difference of two sets using the `symmetric_difference()` method or the `caret (^) operator`.
 
-`
+```
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5, 6}
 
@@ -402,10 +408,10 @@ print(set1 & set2) # prints {3, 4}
 # difference
 print(set1.difference(set2)) # prints {1, 2}
 print(set1 - set2) # prints {1, 2}
-`
+```
 You can also use set methods to add elements to a set or remove elements from a set:
 
-`
+```
 my_set = {1, 2, 3}
 my_set.add(4)
 print(my_set) # prints {1, 2, 3, 4}
@@ -424,7 +430,7 @@ print(symmetric_difference_set) # Output: {1, 2, 4, 5}
 # Alternatively, you can use the caret operator:
 symmetric_difference_set = set1 ^ set2
 print(symmetric_difference_set) # Output: {1, 2, 4, 5}
-`
+```
 
 One important thing to note about sets is that they are unordered, meaning the elements are not stored in any particular order.
 
@@ -438,7 +444,7 @@ To open a file, you can use the `open()` function, which takes **two arguments -
 
 Example:
 
-`
+```
 *Open a file for reading*
 
 file = open("example.txt", "r")
@@ -450,14 +456,14 @@ file = open("example.txt", "w")
 *Open a file for appending*
 
 file = open("example.txt", "a")
-`
+```
 **2. Reading from a file:** 
 
 To read from a file, you can use the `read()` method, which *reads the entire contents* of the file as a single string. You can also use the `readline()` method to read *a single line* from the file or the `readlines()` method to *read all the lines* in the file into a list.
 
 Example:
 
-`
+```
 *Read the entire file*
 
 file = open("example.txt", "r")
@@ -475,14 +481,14 @@ print(line)
 file = open("example.txt", "r")
 lines = file.readlines()
 print(lines)
-`
+```
 **3 Writing to a file:** 
 
 To write to a file, you can use the `write()` method, which *writes a string* to the file. You can also use the `writelines()` method to *write a list of strings* to the file.
 
 Example:
 
-`
+```
 *Write a string to the file*
 
 file = open("example.txt", "w")
@@ -495,19 +501,19 @@ file = open("example.txt", "w")
 lines = ["Hello", "world"]
 file.writelines(lines)
 file.close()
-`
+```
 **4. Closing a file:** 
 
 After you're done reading from or writing to a file, it's important to close the file using the `close()` method. This releases any system resources associated with the file and ensures that any changes you've made to the file are saved.
 
 Example:
-`
+```
 file = open("example.txt", "r")
 
 Do some file operations
 
 file.close()
-`
+```
 
 ### 8. Modules and Packages in Python
 
@@ -520,7 +526,7 @@ Here's an example of how to create and use a module:
 1. Create a new file called my_module.py
 2. Define some functions and variables in the file
 
-`
+```
 *my_module.py*
 
 def hello_world():
@@ -530,11 +536,11 @@ def square(x):
     return x * x
 
 message = "Welcome to my module!"
-`
+```
 
 In another Python file, import the module and use its functions and variables
 
-`
+```
 *import my_module*
 
 my_module.hello_world() # prints "Hello, world!"
@@ -542,7 +548,7 @@ my_module.hello_world() # prints "Hello, world!"
 print(my_module.square(5)) # prints 25
 
 print(my_module.message) # prints "Welcome to my module!"
-`
+```
 Packages are simply directories that contain one or more Python modules. They allow you to organize related modules into a single namespace. When you import a package, Python looks for a file called `__init__.py` in the package directory, and executes the code in that file to initialize the package.
 
 Here's an example of how to create and use a package:
@@ -551,7 +557,7 @@ Here's an example of how to create and use a package:
 2. Inside the directory, create a file called `__init__.py`, which can be empty or contain initialization code
 3. Create one or more module files in the directory
 
-`
+```
 *my_package/module1.py*
 
 def foo():
@@ -561,10 +567,10 @@ def foo():
 
 def bar():
     print("Hello from module2!")
-`
+```
 In another Python file, import the package and its modules and use their functions
 
-`
+```
 *import my_package.module1*
 
 *import my_package.module2*
@@ -572,7 +578,7 @@ In another Python file, import the package and its modules and use their functio
 my_package.module1.foo() # prints "Hello from module1!"
 
 my_package.module2.bar() # prints "Hello from module2!"
-`
+```
 That's a brief overview of how modules and packages work in Python. They are a powerful way to organize and reuse your code, and there are many Python libraries and frameworks available as modules and packages that you can use in your own projects.
 
 ### Excercises
