@@ -445,15 +445,15 @@ To open a file, you can use the `open()` function, which takes **two arguments -
 Example:
 
 ```
-*Open a file for reading*
+1. Open a file for reading
 
 file = open("example.txt", "r")
 
-*Open a file for writing*
+2. Open a file for writing
 
 file = open("example.txt", "w")
 
-*Open a file for appending*
+3. Open a file for appending
 
 file = open("example.txt", "a")
 ```
@@ -464,19 +464,19 @@ To read from a file, you can use the `read()` method, which *reads the entire co
 Example:
 
 ```
-*Read the entire file*
+1. Read the entire file
 
 file = open("example.txt", "r")
 contents = file.read()
 print(contents)
 
-*Read a single line*
+2. Read a single line
 
 file = open("example.txt", "r")
 line = file.readline()
 print(line)
 
-*Read all lines into a list*
+3. Read all lines into a list
 
 file = open("example.txt", "r")
 lines = file.readlines()
@@ -489,13 +489,13 @@ To write to a file, you can use the `write()` method, which *writes a string* to
 Example:
 
 ```
-*Write a string to the file*
+1. Write a string to the file
 
 file = open("example.txt", "w")
 file.write("Hello, world!")
 file.close()
 
-*Write a list of strings to the file*
+2. Write a list of strings to the file
 
 file = open("example.txt", "w")
 lines = ["Hello", "world"]
@@ -527,7 +527,7 @@ Here's an example of how to create and use a module:
 2. Define some functions and variables in the file
 
 ```
-*my_module.py*
+my_module.py
 
 def hello_world():
     print("Hello, world!")
@@ -541,7 +541,7 @@ message = "Welcome to my module!"
 In another Python file, import the module and use its functions and variables
 
 ```
-*import my_module*
+import my_module
 
 my_module.hello_world() # prints "Hello, world!"
 
@@ -558,12 +558,12 @@ Here's an example of how to create and use a package:
 3. Create one or more module files in the directory
 
 ```
-*my_package/module1.py*
+my_package/module1.py
 
 def foo():
     print("Hello from module1!")
 
-*my_package/module2.py*
+my_package/module2.py
 
 def bar():
     print("Hello from module2!")
@@ -571,9 +571,9 @@ def bar():
 In another Python file, import the package and its modules and use their functions
 
 ```
-*import my_package.module1*
+import my_package.module1
 
-*import my_package.module2*
+import my_package.module2
 
 my_package.module1.foo() # prints "Hello from module1!"
 
